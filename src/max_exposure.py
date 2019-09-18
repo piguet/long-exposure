@@ -17,20 +17,17 @@ class LongExposure:
     def averager():
         """Calculate the max using a clojure."""
         count = 0
-        maximum = 0
+        maximum = 0.0
         total = 0.0
 
         def average(value):
             nonlocal count, maximum
             count += 1
-            for b in value:
-                if b > maximum:
-                    total = maximum
-                
+            maximum=max(value)
    
             
             
-            return total
+            return maximum
 
         return average
 
