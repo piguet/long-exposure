@@ -23,9 +23,9 @@ class LongExposure:
             
             nonlocal count, total
             count += 1
-            total.append(value)
+            totalone.append(value)
             
-            totalone=max(total)
+            totalone=max(totalone)
             return totalone 
 
         return average
