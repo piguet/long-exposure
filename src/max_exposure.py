@@ -20,13 +20,13 @@ class LongExposure:
         total = 0.0
 
         def average(value):
+            
             nonlocal count, total
             count += 1
-            total = append(value)
-            
-            return max(total)
-        return average
+            total = max(value)
+            return total 
 
+        return average
     def __call__(self):
         logging.info("Processing video %r with step %r", self.video, self.step)
 
