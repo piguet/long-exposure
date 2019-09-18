@@ -23,12 +23,14 @@ class LongExposure:
         def average(value):
             nonlocal count, maximum
             count += 1
+            for b in value:
+                if b > maximum:
+                    total = maximum
+                
+   
             
-            if value > maximum:
-              total = maximum
             
-            
-            return maximum
+            return total
 
         return average
 
