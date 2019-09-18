@@ -23,7 +23,7 @@ class LongExposure:
             
             nonlocal count, total
             count += 1
-            total = max(value)
+            total = numpy.amax(value)
             return total 
 
         return average
