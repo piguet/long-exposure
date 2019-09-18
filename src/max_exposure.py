@@ -23,7 +23,7 @@ class LongExposure:
             
             nonlocal count, total
             count += 1
-            append.value(value)
+            value.append(value)
             total=max(value)
             return total 
 
