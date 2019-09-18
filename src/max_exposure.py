@@ -23,10 +23,13 @@ class LongExposure:
             
             nonlocal count, total
             count += 1
-            total = numpy.amax(value)
+           append.value(value)
+        total=max(value)
             return total 
 
         return average
+    
+    
     def __call__(self):
         logging.info("Processing video %r with step %r", self.video, self.step)
 
