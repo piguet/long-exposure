@@ -15,20 +15,16 @@ class LongExposure:
 
     @staticmethod
     def averager():
-        """Calculate the max using a clojure."""
+        """Calculate the average using a clojure."""
         count = 0
-        maximum = 0.0
         total = 0.0
 
         def average(value):
-            nonlocal count, maximum
+            nonlocal count, total
             count += 1
-            maximum=max(value)
-   
+            total = append(value)
             
-            
-            return maximum
-
+            return max(total)
         return average
 
     def __call__(self):
