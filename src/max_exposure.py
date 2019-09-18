@@ -24,7 +24,7 @@ class LongExposure:
             count += 1
             totale.extend(value)
             maximum=max(totale)
-            return total 
+            return maximum 
 
         return average
     
