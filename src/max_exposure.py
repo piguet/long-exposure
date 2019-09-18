@@ -19,7 +19,7 @@ class LongExposure:
         count = 0
         total = 0.0
         
-       def average(value):
+        def average(value):
             nonlocal count, total
             count += 1
             totale.extend(value)
