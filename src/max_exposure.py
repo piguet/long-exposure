@@ -23,9 +23,10 @@ class LongExposure:
         def average(value):
             nonlocal count, total
             count += 1
-            totale.extend(value)
-            maximum=max(totale)
-            return maximum 
+            if value > total:
+                total = value
+           
+            return total 
 
         return average
     
