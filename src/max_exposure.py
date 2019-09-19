@@ -25,10 +25,12 @@ class LongExposure:
             nonlocal count, total
             count += 1
             total += value
-            squares.extend(value)
+            squares.append(value)
             
             return squares
+        
         maximum = max(squares)
+        
         return average
 
     
