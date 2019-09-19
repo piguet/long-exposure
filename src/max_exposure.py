@@ -22,12 +22,12 @@ class LongExposure:
         def average(value):
             nonlocal count, total
             count += 1
-            a = value
-            if total > a:
-                total = value
+            total = value
             
             return total 
         
+        if total > value:
+            total = value
 
         return average
 
