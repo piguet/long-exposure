@@ -18,18 +18,19 @@ class LongExposure:
         """Calculate the average using a clojure."""
         count = 0
         total = 0.0
-        totale = []
         
         def average(value):
             nonlocal count, total
             count += 1
-            if value > total:
+            a = value
+            if total > a:
                 total = value
-           
+            
             return total 
+        
 
         return average
-    
+
     
     def __call__(self):
         logging.info("Processing video %r with step %r", self.video, self.step)
