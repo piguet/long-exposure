@@ -31,7 +31,7 @@ class LongExposure:
         
         maximum = max(squares)
         
-        return average
+        return maximum
 
     
     def __call__(self):
