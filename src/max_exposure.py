@@ -26,12 +26,12 @@ class LongExposure:
             count += 1
             total += value
             squares.append(value)
-            
-            return squares
+            maximum = max(squares)
+
+            return maximum
         
-        maximum = max(squares)
         
-        return maximum
+        return average
 
     
     def __call__(self):
