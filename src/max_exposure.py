@@ -27,7 +27,7 @@ class LongExposure:
             series.append(value)
             
              
-            return total 
+            return series 
         
         average = np.max(series)
 
