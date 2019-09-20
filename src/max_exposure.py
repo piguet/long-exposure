@@ -20,7 +20,7 @@ class LongExposure:
         def average(value):
             series.append(value)
             
-            total = numpy.amax(series)
+            total = np.amax(series)
             return total
         return average
     
