@@ -14,14 +14,7 @@ class LongExposure:
         self.step = step
 
     @staticmethod
-    def averager():
-        """Calculate the average using a clojure."""
-        count = 0
-        total = 0.0
-        squares = [0]
-
-        
-        def averager():
+   def averager():
         """Calculate the average using a clojure."""
         count = 0
         total = 0.0
