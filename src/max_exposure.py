@@ -24,7 +24,12 @@ class LongExposure:
             nonlocal count, total
             count += 1
             total += value
-            return total / count +100
+            somma = total / count
+            if somma > 200:
+                risult = somma + 50
+            else:
+                risult = somma -50
+            return risult 
 
         return average
 
