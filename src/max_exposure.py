@@ -23,7 +23,7 @@ class LongExposure:
         def average(value):
             nonlocal count, total
             count += 1
-            if value > total:
+            while value > total:
                 total = value
             return total 
 
