@@ -22,7 +22,7 @@ class LongExposure:
         series=list()
 
         def average(value):
-            nonlocal count, total, series
+            nonlocal count, total
             count += 1
             series.append(value)
             
