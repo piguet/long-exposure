@@ -23,7 +23,8 @@ class LongExposure:
         def average(value):
             nonlocal count, total
             count += 1
-            total = np.max(value)
+            series.append(value)
+            total = np.max(series)
              
             return total 
 
