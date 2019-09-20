@@ -15,19 +15,14 @@ class LongExposure:
 
     @staticmethod
     def averager():
-        """Calculate the average using a clojure."""
-        count = 0
-        total = 0.0
-        
-
-        def average(value):
-            nonlocal count, total
-            count += 1
-            while value > total:
-                total = value
-            return total 
-
-        return average
+    series = []
+    def average(value):
+        series.append(value)
+        total = max(series)
+        return total
+    return average
+    
+    
 
     
     def __call__(self):
