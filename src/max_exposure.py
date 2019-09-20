@@ -21,16 +21,19 @@ class LongExposure:
         squares = [0]
 
         
+        def averager():
+        """Calculate the average using a clojure."""
+        count = 0
+        total = 0.0
+
         def average(value):
             nonlocal count, total
             count += 1
-            total += value
-            squares.append(value)
-            maximum = max(squares)
+            total.append(value)
+            maximum = max(total)
 
-            return maximum
-        
-        
+            return maximum 
+
         return average
 
     
