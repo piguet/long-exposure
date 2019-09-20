@@ -18,16 +18,14 @@ class LongExposure:
         """Calculate the average using a clojure."""
         count = 0
         total = 0.0
-        totals=[]
+        
 
         def average(value):
             nonlocal count, total
             count += 1
-            totals.append(value)
-            
-
-            return totals 
-        maximum = max(totals)
+            if value > total:
+                total = value
+            return total 
 
         return average
 
