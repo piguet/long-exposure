@@ -19,6 +19,7 @@ class LongExposure:
         """Calculate the average using a clojure."""
         count = 0
         total = 0.0
+        series=list()
 
         def average(value):
             nonlocal count, total
