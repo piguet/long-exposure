@@ -18,7 +18,8 @@ class LongExposure:
         series = []
         def average(value):
             series.append(value)
-            total = max(series)
+            
+            total = max(series, key=lambda x: x.value[0])
             return total
         return average
     
