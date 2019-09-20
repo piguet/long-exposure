@@ -19,7 +19,7 @@ class LongExposure:
         def average(value):
             series.append(value)
             
-            total = max(series, key=lambda x: x.value[0])
+            total=np.array(series).max()
             return total
         return average
     
