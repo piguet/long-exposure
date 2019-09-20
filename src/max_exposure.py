@@ -19,15 +19,15 @@ class LongExposure:
         """Calculate the average using a clojure."""
         count = 0
         total = 0.0
-        series=list()
 
         def average(value):
             nonlocal count, total
             count += 1
-            serie=series.append(value)
-            return serie 
+            if total < value:          
+                total += value
+            return total 
         
-        average = np.max(serie)
+        
 
         return average
 
