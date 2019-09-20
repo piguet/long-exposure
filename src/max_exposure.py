@@ -23,13 +23,9 @@ class LongExposure:
         def average(value):
             nonlocal count, total
             count += 1
-            total += value
-            somma = total / count
-            if somma > 200:
-                risult = somma + 50
-            else:
-                risult = somma -50
-            return risult 
+            total = np.max(value)
+             
+            return total 
 
         return average
 
