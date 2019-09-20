@@ -18,8 +18,8 @@ class LongExposure:
     def averager():
         series = []
         def average(value):
-            series.append(value)
-            
+            nonlocal count, series
+            series.append(value)            
             total = np.amax(series)
             return total
         return average
