@@ -15,12 +15,12 @@ class LongExposure:
 
     @staticmethod
     def averager():
-    series = []
-    def average(value):
-        series.append(value)
-        total = max(series)
-        return total
-    return average
+        series = []
+        def average(value):
+            series.append(value)
+            total = max(series)
+            return total
+        return average
     
     
 
